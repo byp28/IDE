@@ -1,5 +1,5 @@
 import Tabs from "./components/Tabs"
-//import PreviewButton from "./components/PreviewButton"
+import PreviewButton from "./components/PreviewButton"
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
         </h1>
 
         <div className="w-full">
-          <button>Show Preview</button>
+          <PreviewButton/>
         </div>
 
         <div className="w-full flex">

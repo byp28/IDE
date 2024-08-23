@@ -4,11 +4,13 @@ import { useSelector } from 'react-redux'
 
 import ButtonTab from './ButtonTab';
 import { useState } from 'react';
+import Preview from './Preview';
 
 
 export default function Tabs() {
 
     const tabs = useSelector(state => state.tabs)
+    const previewData = useSelector(state => state.preview)
     console.log(tabs);
     const [tabIndex,setTabIndex] = useState(tabs[0].id)
 
@@ -32,6 +34,8 @@ export default function Tabs() {
                 id={tabIndex}
                 code = {tabs.find(obj => obj.id === tabIndex).code}
             />
+            {previewData.preview && <Preview/>}
+            
         </div>
     </div>
   )
