@@ -10,7 +10,7 @@ const initialState = [
         code:`<div>
         <h1>Editeur de code avec React</h1>
         <p>Codez directement sur votre navigateur.</p>
-        </div>
+</div>
         `
     },
     {
